@@ -12,19 +12,33 @@
 <GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <columnConstraints>
       <ColumnConstraints />
+      <ColumnConstraints />
    </columnConstraints>
    <rowConstraints>
       <RowConstraints />
    </rowConstraints>
    <children>
-      <AnchorPane prefHeight="338.0" prefWidth="445.0">
+      <AnchorPane prefHeight="471.0" prefWidth="498.0" GridPane.columnIndex="1">
          <children>
-            <Button fx:id="Button1" layoutX="197.0" layoutY="76.0" mnemonicParsing="false" onAction="#buttonclick" text="Search" />
-            <Label fx:id="TitleLbl" layoutX="165.0" layoutY="5.0" text="Weather alert look-up" />
-            <TextField fx:id="code_field" layoutX="190.0" layoutY="40.0" prefHeight="26.0" prefWidth="66.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="200.0" layoutX="15.0" layoutY="113.0" stroke="BLACK" strokeType="INSIDE" width="418.0" />
-            <Label fx:id="ZipLbl" layoutX="133.0" layoutY="45.0" prefHeight="18.0" prefWidth="52.0" text="Zip Code:" />
-            <Label fx:id="alertOut_lbl" layoutX="22.0" layoutY="121.0" prefHeight="187.0" prefWidth="405.0" text="" wrapText="true" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="160.0" layoutX="10.0" layoutY="23.0" stroke="BLACK" strokeType="INSIDE" width="236.0" />
+            <Button fx:id="Button1" layoutX="221.0" layoutY="223.0" mnemonicParsing="false" onAction="#buttonclick" text="Search" />
+            <Label fx:id="TitleLbl" layoutX="185.0" layoutY="5.0" prefHeight="18.0" prefWidth="122.0" text="Weather alert look-up" />
+            <TextField fx:id="code_field" layoutX="215.0" layoutY="191.0" prefHeight="26.0" prefWidth="66.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="187.0" layoutX="11.0" layoutY="255.0" stroke="BLACK" strokeType="INSIDE" width="473.0" />
+            <Label fx:id="ZipLbl" layoutX="133.0" layoutY="196.0" prefHeight="18.0" prefWidth="77.0" text="County Code:" />
+            <Label fx:id="alertOut_lbl" layoutX="14.0" layoutY="259.0" prefHeight="178.0" prefWidth="465.0" text="" wrapText="true" />
+            <Button fx:id="add_btn" layoutX="98.0" layoutY="149.0" mnemonicParsing="false" onAction="#clickadd" prefHeight="26.0" prefWidth="52.0" text="Add" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="160.0" layoutX="244.0" layoutY="23.0" stroke="BLACK" strokeType="INSIDE" width="242.0" />
+            <Button fx:id="del_btn" layoutX="339.0" layoutY="149.0" mnemonicParsing="false" onAction="#clickdel" text="Delete" />
+            <TextField fx:id="countyCode_addbox" layoutX="76.0" layoutY="69.0" />
+            <TextField fx:id="countyName_addbox" layoutX="76.0" layoutY="114.0" />
+            <TextField fx:id="countyCode_delbox" layoutX="290.0" layoutY="114.0" />
+            <Label layoutX="23.0" layoutY="73.0" prefHeight="18.0" prefWidth="42.0" text="Code:" />
+            <Label layoutX="23.0" layoutY="118.0" prefHeight="18.0" prefWidth="42.0" text="Name:" />
+            <Label layoutX="293.0" layoutY="72.0" prefHeight="18.0" prefWidth="78.0" text="Code" />
+            <Label fx:id="status_lbl" layoutX="16.0" layoutY="449.0" prefHeight="18.0" prefWidth="254.0" text="Label" />
+            <Label layoutX="100.0" layoutY="31.0" prefHeight="18.0" prefWidth="66.0" text="Add County" />
+            <Label layoutX="325.0" layoutY="31.0" prefHeight="18.0" prefWidth="78.0" text="Delete County" />
          </children>
       </AnchorPane>
    </children>
