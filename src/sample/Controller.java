@@ -18,7 +18,7 @@ import java.sql.*;
 
 public class Controller {
     private static final String USERNAME = "peraarj";
-    private static final String PASSWORD = "th3taken";
+    private static final String PASSWORD = "";
     private static final String CONN_STRING = "jdbc:mysql://www.db4free.net:3306/weatherdb?verifyServerCertificate=false&useSSL=false";
 
     @FXML
